@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/layoutBackgroundLight">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+         android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:cardElevation="0dp"
+
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:minHeight="140dp"
+                    android:layout_height="wrap_content">
+
+                    <com.etechnie.anagh.customs.CircularImageView
+                        android:id="@+id/category_image"
+                        android:layout_width="82dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/profile"
+                        android:layout_height="82dp"
+                        android:layout_margin="16dp"
+                        android:scaleType="fitCenter"
+                        app:border_width="0dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/category_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="start"
+                                android:text="aaaaaaaaaaa"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/category_products"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="start"
+                                android:text="categoryyyyyyyyyyyyyyyyyyyy"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/textColorSecondaryDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/degree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="start"
+                                android:text="degreeeeeeeeeeee"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/experience"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="start"
+                                android:text="ttttttttttt"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/textColorSecondaryDark"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shipping_address"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <com.borjabravo.readmoretextview.ReadMoreTextView
+                            android:id="@+id/doctor_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            app:colorClickableText="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clinic Details"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:padding="5dp"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/clinic_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:gravity="start"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:text="@string/no_of_products"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/textColorSecondaryDark"
+                                android:textSize="14sp"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp" >
+
+                            <TextView
+                                android:id="@+id/clinic_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/total_price"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+
+
+                        </RelativeLayout>
+                        <!--<RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/shipping_method"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/shipping_method"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:text="@string/shipping_method"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/payment_method"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/payment_method"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:text="@string/payment_method"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp"/>
+
+                        </RelativeLayout>-->
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="Fees"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/fees"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:text="@string/order_date"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="Distance"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="end"
+                                android:maxLines="1"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true" />
+
+                            <com.kofigyan.stateprogressbar.StateProgressBar
+                                android:id="@+id/stateProgress"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:spb_animateToCurrentProgressState="true"
+                                app:spb_checkStateCompleted="true"
+                                app:spb_currentStateDescriptionColor="#808080"
+                                app:spb_currentStateNumber="four"
+                                app:spb_maxStateNumber="four"
+                                app:spb_stateBackgroundColor="#BDBDBD"
+                                app:spb_stateDescriptionColor="#808080"
+                                app:spb_stateDescriptionSize="10sp"
+                                app:spb_stateForegroundColor="@color/colorAccentGreen"
+                                app:spb_stateNumberBackgroundColor="#808080"
+                                app:spb_stateNumberForegroundColor="#eeeeee"
+                                app:spb_stateSize="20dp"
+                                android:layout_below="@+id/text"/>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment Details"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorWhite"
+                        android:padding="5dp"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                     <com.google.android.material.tabs.TabLayout
+                               android:id="@+id/product_tabs"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               app:tabMode="scrollable"
+                               app:tabIndicatorHeight="2dp"
+                               app:tabBackground="@color/white"
+                               android:background="@color/white"
+                               app:tabTextColor="@color/textColorSecondaryLight"
+                               app:tabIndicatorColor="@color/textColorSecondaryDark"
+                               app:tabSelectedTextColor="@color/textColorSecondaryDark"
+                               style="@style/MyCustomTabLayout"
+                               app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                           <com.etechnie.anagh.customs.CustomViewPager
+                               android:id="@+id/product_viewpager"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@color/windowBackground"
+                               app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shipping_method"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <TextView
+                        android:id="@+id/shipping_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="@string/shipping_method"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/products"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/checkout_items_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotal"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/subtotal"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_subtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/tax"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_tax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/shipping"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_shipping"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/discount"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$00.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/total"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary" />
+
+                            <TextView
+                                android:id="@+id/checkout_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="$000.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textAlignment="textEnd"
+                                android:gravity="end"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/checkout_coupons_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/buyer_comments_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_notes"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <TextView
+                        android:id="@+id/buyer_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="1"
+                        android:padding="5dp"
+                        android:text="@string/order_notes"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/seller_comments_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_notes"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <TextView
+                        android:id="@+id/seller_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="1"
+                        android:padding="5dp"
+                        android:text="@string/order_notes"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_method"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorSecondaryDark"
+                        android:padding="5dp"
+                        android:background="@color/windowBackgroundLight" />
+
+                    <TextView
+                        android:id="@+id/payment_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="@string/payment_method"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorSecondary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:background="@color/windowBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateInfoBtn"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/button_height"
+                android:text="Book Appointment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp"
+                android:background="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
